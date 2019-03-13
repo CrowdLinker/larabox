@@ -118,7 +118,7 @@ RUN echo '. /etc/.docker-prompt' >> /etc/bash.bashrc\
 WORKDIR /usr/share/nginx/html
 
 # Expose port
-EXPOSE 80
+EXPOSE 80 3306 2525 6379
 
 # Copy php index file
 COPY ./html/index.php /usr/share/nginx/html/index.php
